@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulario</title>
+</head>
+<body>
+
+<h1>Formulario</h1>
+<p>Ejemplo</p>
+
+<form id="form-order">
+	
+	<p>
+		<label for="name">Nombre Obligatorio:</label>
+		<input type="text" name="name" id="name" placeholder="Yorman Miguel" autofocus autocomplete="" required>
+	</p>
+
+	<p>
+		<label for="passwd">Contraseña:</label>
+		<input type="password" name="passwd" id="passwd" placeholder="qw123" pattern="[a-z]{3}[0-9]{4}" required> (la contraseña debe tener 3 letras y 4 numeros en ese orden)
+	</p>
+
+	<p>
+		<label for="phone">Telefono:</label>
+		<input type="tel" name="phone" id="phone" placeholder="+584247711093">
+	</p>
+
+	<p>
+		<label for="email">Email:</label>
+		<input type="email" name="email" id="email" placeholder="estees@tusabes.com">
+	</p>
+
+	<p>
+		<label for="website">URL:</label>
+		<input type="url" name="website" id="website" placeholder="www.casi.com">
+	</p>
+
+	<p>
+		<label for="numero">N° de temas:</label>
+		<input type="number" name="numero" id="numero" min="2" max="14" step="2" placeholder="2"> 
+	</p>
+
+	<p>
+		<label for="data">Fecha de envio:</label>
+		<input type="date" name="data" id="data" min="2022-07-16">
+	</p>
+
+	<p>
+		<label for="colore">Color:</label>
+		<input type="color" name="colore" id="colore">
+	</p>
+
+	<p>
+		<label for="bs">Buscar:</label>
+		<input type="search" name="bs" id="bs">
+	</p>
+
+	<p>
+		<label for="points">Rango de valor:</label>
+		<input type="range" name="points" id="points" min="1" max="10">
+	</p>
+
+	<p>
+		<fieldset>
+			<legend>Selecciona una prioridad</legend>
+			<p><label><input type="radio" name="priority" value="baja" checked> Baja</label></p>
+			<p><label><input type="radio" name="priority" value="media"> Media</label></p>
+			<p><label><input type="radio" name="priority" value="alta"> Alta</label></p>
+		</fieldset>
+	</p>
+
+	<p>
+		<fieldset>
+			<legend>Selecciona una prioridad</legend>
+			<p><label><input type="checkbox" name="prioritys" value="urgente"> Urgente</label></p>
+			<p><label><input type="checkbox" name="prioritys" value="acuse"> Acuse de recibo</label></p>
+			<p><label><input type="checkbox" name="prioritys" value="reembolso"> Contra reembolso</label></p>
+		</fieldset>
+	</p>
+
+	<input type="submit" value="Enviar">
+</form>
+
+
+
+</body>
+</html>
